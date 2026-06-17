@@ -28,15 +28,3 @@ export interface Attraction {
   tips: string[];
 }
 
-export interface WeatherData {
-  temperature: number;
-  windSpeed: number;
-  weatherCode: number;
-  label: string;
-}
-
-export interface UserProfile {
-  name: string;
-  preferredCity: string;
-  preferredCategory: AttractionCategory;
-}
