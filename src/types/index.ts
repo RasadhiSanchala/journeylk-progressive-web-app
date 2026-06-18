@@ -28,3 +28,8 @@ export interface Attraction {
   tips: string[];
 }
 
+export interface UserProfile {
+  name: string;
+  preferredCity: string;
+  preferredCategory: AttractionCategory;
+}
