@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MapPin, Star } from "lucide-react";
+import FavoriteButton from "@/components/FavoriteButton";
 import type { Attraction } from "@/types";
 
 interface AttractionCardProps {
@@ -19,6 +20,9 @@ export default function AttractionCard({ attraction }: AttractionCardProps) {
         className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/15 to-transparent" />
+      <div className="absolute right-4 top-4">
+        <FavoriteButton id={attraction.id} />
+      </div>
       <div className="absolute bottom-4 left-4 right-4">
         <span className="mb-2 inline-flex rounded-full bg-blue-700/90 px-3 py-1 text-xs font-bold text-white">
           {attraction.category}
