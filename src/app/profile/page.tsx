@@ -55,6 +55,7 @@ export default function ProfilePage() {
             className="mt-2 min-h-12 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 text-sm font-medium outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
         </label>
+        
         {nameError && <p className="mt-2 text-sm font-medium text-red-600">{nameError}</p>}
 
         <label className="mt-5 block">
