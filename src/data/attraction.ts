@@ -10,6 +10,45 @@ export const categories: AttractionCategory[] = [
   "Dining",
 ];
 
+const imageLinks = {
+  sigiriya:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%2C_Rock_Fortress.jpg?width=1200",
+  ancientCity:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya_Rock_Sri_Lanka_%2829959819372%29.jpg?width=1200",
+  temple:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/SL_Kandy_asv2020-01_img35_Sacred_Tooth_Temple.jpg?width=1200",
+  kandyLake:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Kandy_Lake_Photo.jpeg?width=1200",
+  fort:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Galle_Fort%2C_Sri_Lanka.JPG?width=1200",
+  coast:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Galle_fort_sri_lanka.jpg?width=1200",
+  highlands:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Horton_Plains_National_Park_in_Sri_Lanka.jpg?width=1200",
+  waterfall:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Baker%27s_Falls_Horton_Plains.jpg?width=1200",
+  beach:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Mirissa_Beach.jpg?width=1200",
+  hotel:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Cinnamon_Grand%2C_Colombo%2C_Atrium.jpg?width=1200",
+  city:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sri_Lanka_-_027_-_Kandy_lake_and_city_centre.jpg?width=1200",
+  bridge:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Nine_Arches_Bridge.jpg?width=1200",
+  rainforest:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/20160128_Sri_Lanka_4115_Sinharaja_Forest_Reserve_sRGB_%2825648608072%29.jpg?width=1200",
+  kelaniya:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Kelaniya_Temple_%28Kelaniya_Raja_Maha_Vihara%29_%285440490106%29.jpg?width=1200",
+  arugam:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Arugam_Bay_Beach.jpg?width=1200",
+  cafe:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Cinnamon_Grand%2C_Colombo%2C_Coffee_Shop_01.jpg?width=1200",
+  resort:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Heritance_Kandalama_Exterior_View.JPG?width=1200",
+  lake:
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Kandalama_Lake_in_Dambulla_DSC496.jpg?width=1200",
+};
+
 export const attractions: Attraction[] = [
   {
     id: 1,
@@ -20,8 +59,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Ancient rock fortress with frescoes, royal gardens, and panoramic views.",
     description:
       "Sigiriya Rock Fortress is one of Sri Lanka's most iconic historical attractions. The site combines ancient engineering, royal gardens, frescoes, mirror walls, and a dramatic climb to the summit. It is ideal for visitors who want to experience history, architecture, and landscape views in one destination.",
-    image: "/images/sigiriya.svg",
-    gallery: ["/images/sigiriya.svg", "/images/ancient-city.svg"],
+    image: imageLinks.sigiriya,
+    gallery: [imageLinks.sigiriya, imageLinks.ancientCity],
     rating: 4.9,
     latitude: 7.957,
     longitude: 80.7603,
@@ -41,8 +80,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Sacred Buddhist temple located near the scenic Kandy Lake.",
     description:
       "The Temple of the Tooth Relic is a sacred religious and cultural landmark in Kandy. It attracts pilgrims and travellers interested in Sri Lankan heritage, architecture, rituals, and traditional ceremonies.",
-    image: "/images/temple.svg",
-    gallery: ["/images/temple.svg", "/images/lake.svg"],
+    image: imageLinks.temple,
+    gallery: [imageLinks.temple, imageLinks.kandyLake],
     rating: 4.8,
     latitude: 7.2936,
     longitude: 80.6413,
@@ -62,8 +101,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Coastal colonial fort with old streets, cafes, museums, and ocean views.",
     description:
       "Galle Fort is a historic coastal cityscape with colonial architecture, museums, boutique shops, cafes, and scenic ramparts facing the Indian Ocean. It is suitable for walking tours and photography.",
-    image: "/images/fort.svg",
-    gallery: ["/images/fort.svg", "/images/coast.svg"],
+    image: imageLinks.fort,
+    gallery: [imageLinks.fort, imageLinks.coast],
     rating: 4.7,
     latitude: 6.0269,
     longitude: 80.217,
@@ -83,8 +122,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Misty highland national park famous for World's End and Baker's Falls.",
     description:
       "Horton Plains is a highland nature destination known for grasslands, cloud forests, waterfalls, and the World's End viewpoint. It is a strong choice for tourists interested in hiking and wildlife.",
-    image: "/images/highlands.svg",
-    gallery: ["/images/highlands.svg", "/images/waterfall.svg"],
+    image: imageLinks.highlands,
+    gallery: [imageLinks.highlands, imageLinks.waterfall],
     rating: 4.6,
     latitude: 6.8021,
     longitude: 80.8073,
@@ -104,8 +143,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Popular beach town for surfing, whale watching, and sunset views.",
     description:
       "Mirissa Beach is a lively coastal attraction famous for whale watching, surfing, beach restaurants, and relaxed sunsets. It is suitable for both short visits and overnight stays.",
-    image: "/images/beach.svg",
-    gallery: ["/images/beach.svg", "/images/coast.svg"],
+    image: imageLinks.beach,
+    gallery: [imageLinks.beach, imageLinks.coast],
     rating: 4.7,
     latitude: 5.9483,
     longitude: 80.4716,
@@ -125,8 +164,8 @@ export const attractions: Attraction[] = [
     shortDescription: "City hotel close to shopping, business areas, and major Colombo attractions.",
     description:
       "Cinnamon Grand Colombo is a well-known city hotel used by travellers who want convenient access to restaurants, shopping, business districts, and nearby urban attractions.",
-    image: "/images/hotel.svg",
-    gallery: ["/images/hotel.svg", "/images/city.svg"],
+    image: imageLinks.hotel,
+    gallery: [imageLinks.hotel, imageLinks.city],
     rating: 4.5,
     latitude: 6.9188,
     longitude: 79.8487,
@@ -146,8 +185,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Scenic colonial-era railway bridge surrounded by green hills.",
     description:
       "Nine Arches Bridge is a scenic railway landmark in Ella. Its stone arches, nearby tea fields, and mountain setting make it a popular photography and walking destination.",
-    image: "/images/bridge.svg",
-    gallery: ["/images/bridge.svg", "/images/highlands.svg"],
+    image: imageLinks.bridge,
+    gallery: [imageLinks.bridge, imageLinks.highlands],
     rating: 4.6,
     latitude: 6.8768,
     longitude: 81.0608,
@@ -167,8 +206,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Rainforest reserve with rich biodiversity and guided nature trails.",
     description:
       "Sinharaja Forest Reserve is a rainforest destination with high biodiversity, birdlife, streams, and guided trails. It is best explored with a registered guide.",
-    image: "/images/rainforest.svg",
-    gallery: ["/images/rainforest.svg", "/images/waterfall.svg"],
+    image: imageLinks.rainforest,
+    gallery: [imageLinks.rainforest, imageLinks.waterfall],
     rating: 4.6,
     latitude: 6.4268,
     longitude: 80.4436,
@@ -188,8 +227,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Historic Buddhist temple known for murals and religious significance.",
     description:
       "Kelaniya Raja Maha Vihara is a significant Buddhist temple near Colombo. It is known for murals, cultural value, and peaceful temple grounds.",
-    image: "/images/kelaniya.svg",
-    gallery: ["/images/kelaniya.svg", "/images/temple.svg"],
+    image: imageLinks.kelaniya,
+    gallery: [imageLinks.kelaniya, imageLinks.temple],
     rating: 4.7,
     latitude: 6.9518,
     longitude: 79.9187,
@@ -209,8 +248,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Surfing destination with beach cafes and relaxed coastal atmosphere.",
     description:
       "Arugam Bay is a popular beach destination, especially for surfing. It also offers cafes, lagoon trips, and access to nearby wildlife areas.",
-    image: "/images/arugam.svg",
-    gallery: ["/images/arugam.svg", "/images/beach.svg"],
+    image: imageLinks.arugam,
+    gallery: [imageLinks.arugam, imageLinks.beach],
     rating: 4.6,
     latitude: 6.8404,
     longitude: 81.8368,
@@ -230,8 +269,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Coffee and local pastries stop for travellers exploring Colombo.",
     description:
       "Coastal Roasters is a sample dining location included to demonstrate category filtering beyond core attractions. It represents how tourists can find nearby food stops during a trip.",
-    image: "/images/cafe.svg",
-    gallery: ["/images/cafe.svg", "/images/city.svg"],
+    image: imageLinks.cafe,
+    gallery: [imageLinks.cafe, imageLinks.city],
     rating: 4.4,
     latitude: 6.9271,
     longitude: 79.8612,
@@ -251,8 +290,8 @@ export const attractions: Attraction[] = [
     shortDescription: "Nature-integrated hotel near Dambulla and Sigiriya travel routes.",
     description:
       "Heritance Kandalama is a well-known hotel integrated with the natural landscape. It is useful for travellers visiting Sigiriya, Dambulla, and nearby cultural triangle attractions.",
-    image: "/images/resort.svg",
-    gallery: ["/images/resort.svg", "/images/lake.svg"],
+    image: imageLinks.resort,
+    gallery: [imageLinks.resort, imageLinks.lake],
     rating: 4.7,
     latitude: 7.8681,
     longitude: 80.7065,
@@ -262,8 +301,8 @@ export const attractions: Attraction[] = [
     tags: ["Hotel", "Nature", "Cultural Triangle"],
     features: ["Pool", "Wi-Fi", "Nature views"],
     tips: ["Best for cultural triangle itineraries.", "Reserve early during holiday periods."],
-  }
-]
+  },
+];
 
 export function getAttractionById(id: number): Attraction | undefined {
   return attractions.find((attraction) => attraction.id === id);
