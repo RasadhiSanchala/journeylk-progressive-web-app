@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JourneyLK — Progressive Web App
 
-## Getting Started
+JourneyLK is a mobile-first Local Tour & Travel Web Guide built for SENG 41293 — Mobile Web Application Development, Track B.
 
-First, run the development server:
+The application helps tourists discover Sri Lankan attractions, filter places by category, view rich destination details, save favorites, calculate real-time distance using the browser Geolocation API, and open destinations in Google Maps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Technology Stack
+
+- Next.js latest App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Fetch API
+- LocalStorage
+- HTML5 Geolocation API
+- Open-Meteo Weather API
+- PWA Web Manifest
+
+## Main Features
+
+- Mobile-first responsive layout with phone-width app shell
+- Discover page with attraction cards, search, and category filtering
+- Mock REST API route at `/api/attractions`
+- Rich attraction detail page with gallery, tips, rating, entry fee, opening hours, and directions
+- Favorites system persisted with LocalStorage
+- Nearby page with Geolocation-based distance calculation and mobile map-style interface
+- Profile page with client-side form validation and persisted user preferences
+- PWA manifest for installability
+- Bottom navigation with touch-friendly targets
+
+## Assignment Requirement Mapping
+
+| Requirement | How JourneyLK Covers It |
+| --- | --- |
+| Mobile-first responsive design | max-width mobile shell, bottom nav, responsive cards, 48px touch targets |
+| DOM/state management | React state for filters, search, forms, favorites, weather, and geolocation |
+| Asynchronous integration | Fetch API calls `/api/attractions` and Open-Meteo weather service |
+| Browser storage | LocalStorage for favorites and profile preferences |
+| Web-based hardware API | Geolocation API for real-time distance calculation |
+| SPA routing | Next.js App Router pages and dynamic attraction routes |
+| Code quality | TypeScript interfaces, reusable components, hooks, utilities, and error handling |
+
+## Folder Structure
+
+```txt
+src/
+├── app/
+│   ├── api/attractions/route.ts
+│   ├── attractions/[id]/page.tsx
+│   ├── favorites/page.tsx
+│   ├── nearby/page.tsx
+│   ├── profile/page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+├── data/
+├── hooks/
+├── lib/
+└── types/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open:
 
-## Learn More
+```txt
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Production Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Useful Commands
 
-## Deploy on Vercel
+```bash
+npm run dev        # start development server
+npm run build      # production build
+npm run lint       # run ESLint
+npm run type-check # run TypeScript checks
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Browser Compatibility Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Recommended: Google Chrome latest
+- Firefox and Safari are also supported for normal browsing
+- Geolocation requires HTTPS or localhost
+- For viva testing, use Chrome DevTools responsive device toolbar
+
+
