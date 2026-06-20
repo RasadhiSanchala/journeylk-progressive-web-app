@@ -8,6 +8,7 @@ import CategoryFilter from "@/components/CategoryFilter";
 import EmptyState from "@/components/EmptyState";
 import TopBar from "@/components/TopBar";
 import type { Attraction, AttractionCategory } from "@/types";
+import InstallPromptModal from "@/components/InstallPromptModal";
 
 export default function DiscoverPage() {
   const [attractions, setAttractions] = useState<Attraction[]>([]);
@@ -57,7 +58,7 @@ export default function DiscoverPage() {
   return (
     <div>
       <TopBar />
-
+         <InstallPromptModal />
       <section className="px-5 pt-5">
         <div className="rounded-[2rem] bg-gradient-to-br from-blue-800 via-blue-700 to-sky-500 p-5 text-white shadow-xl shadow-blue-900/20">
           <p className="text-sm font-semibold text-blue-100">Mobile travel companion</p>
