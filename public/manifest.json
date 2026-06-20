@@ -1,23 +1,25 @@
 {
-  "name": "JourneyLK Progressive Web App",
+  "name": "JourneyLK - Local Tour and Travel Web Guide",
   "short_name": "JourneyLK",
-  "description": "Mobile-first local tour and travel web guide for Sri Lankan attractions.",
+  "description": "A mobile-first Sri Lankan travel guide for attractions, favorites, nearby places, and map directions.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#f8fafc",
-  "theme_color": "#0f4db8",
+  "theme_color": "#1d4ed8",
+  "categories": ["travel", "navigation", "lifestyle"],
   "icons": [
     {
-      "src": "/icons/icon-192.svg",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512.svg",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
