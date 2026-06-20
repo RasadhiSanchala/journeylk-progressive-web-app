@@ -1,8 +1,9 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
-import { BadgeCheck, Database, GitBranch, MapPinned, Smartphone } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 import TopBar from "@/components/TopBar";
+import InstallAppButton from "@/components/InstallAppButton";
 import { categories } from "@/data/attraction";
 import { readJsonFromStorage, writeJsonToStorage } from "@/lib/storage";
 import type { AttractionCategory, UserProfile } from "@/types";
@@ -97,6 +98,7 @@ export default function ProfilePage() {
         )}
       </form>
 
+      <InstallAppButton />
     </div>
   );
 }
