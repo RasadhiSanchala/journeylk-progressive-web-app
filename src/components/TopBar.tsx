@@ -1,35 +1,21 @@
-"use client";
-
 import Link from "next/link";
-import { MapPin, Search } from "lucide-react";
 
 interface TopBarProps {
   title?: string;
-  showSearchIcon?: boolean;
 }
 
-export default function TopBar({ title = "JourneyLK", showSearchIcon = true }: TopBarProps) {
+export default function TopBar({ title = "JourneyLK" }: TopBarProps) {
   return (
-    <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-slate-200 bg-white/95 px-5 backdrop-blur">
-      <button
-        type="button"
-        aria-label="Search attractions"
-        className="grid min-h-12 min-w-12 place-items-center rounded-full text-slate-700 transition hover:bg-slate-100"
-      >
-        {showSearchIcon ? <Search size={21} /> : <span />}
-      </button>
-
-      <Link href="/" className="text-lg font-black tracking-tight text-blue-800">
-        {title}
-      </Link>
-
-      <Link
-        href="/nearby"
-        aria-label="Open nearby map"
-        className="grid min-h-12 min-w-12 place-items-center rounded-full text-slate-700 transition hover:bg-slate-100"
-      >
-        <MapPin size={22} />
-      </Link>
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur-md">
+      <div className="mx-auto flex h-14 max-w-md items-center justify-center px-5">
+        <Link
+          href="/"
+          aria-label="Go to JourneyLK home"
+          className="text-[17px] font-black tracking-tight text-blue-800"
+        >
+          {title}
+        </Link>
+      </div>
     </header>
   );
 }
