@@ -43,7 +43,7 @@ export default function ProfilePage() {
       <TopBar />
       <section className="px-5 pb-5 pt-7">
         <h1 className="text-3xl font-black text-slate-950">Profile</h1>
-        <p className="mt-2 text-slate-600">Manage simple local preferences for your JourneyLK experience.</p>
+        <p className="mt-2 text-slate-600">Manage your JourneyLK experience.</p>
       </section>
 
       <form onSubmit={handleSubmit} className="mx-5 rounded-3xl bg-white p-5 shadow-md shadow-slate-900/8 ring-1 ring-slate-200">
@@ -52,7 +52,7 @@ export default function ProfilePage() {
           <input
             value={profile.name}
             onChange={(event) => setProfile((current) => ({ ...current, name: event.target.value }))}
-            placeholder="Example: Sanduni"
+            placeholder="Example: Rasadhi"
             className="mt-2 min-h-12 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 text-sm font-medium outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
         </label>
