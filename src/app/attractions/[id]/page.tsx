@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArrowLeft, BadgeCheck, Car, Clock, Map, MapPin, Navigation, Star, Ticket, Wifi } from "lucide-react";
@@ -34,7 +35,14 @@ export default function AttractionDetailPage() {
   return (
     <div className="bg-slate-50">
       <section className="relative h-[370px] overflow-hidden">
-        <img src={attraction.image} alt={attraction.name} className="h-full w-full object-cover" />
+        <Image
+          src={attraction.image}
+          alt={attraction.name}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/30" />
         <div className="absolute left-4 right-4 top-4 flex items-center justify-between">
           <Link
@@ -119,7 +127,15 @@ export default function AttractionDetailPage() {
           </div>
           <div className="no-scrollbar mt-4 flex gap-4 overflow-x-auto">
             {attraction.gallery.map((image) => (
-              <img key={image} src={image} alt={`${attraction.name} gallery`} className="h-36 w-56 shrink-0 rounded-2xl object-cover" />
+              <div key={image} className="relative h-36 w-56 shrink-0 overflow-hidden rounded-2xl">
+                <Image
+                  src={image}
+                  alt={`${attraction.name} gallery`}
+                  fill
+                  sizes="224px"
+                  className="object-cover"
+                />
+              </div>
             ))}
           </div>
         </section>
@@ -140,12 +156,12 @@ export default function AttractionDetailPage() {
       <div className="sticky bottom-20 z-20 border-t border-slate-200 bg-white/95 px-5 py-4 backdrop-blur">
         <div className="flex gap-3">
           <a
-          href={createGoogleMapsDirectionsUrl(
-  attraction.latitude,
-  attraction.longitude,
-  latitude,
-  longitude
-)}
+            href={createGoogleMapsDirectionsUrl(
+              attraction.latitude,
+              attraction.longitude,
+              latitude,
+              longitude,
+            )}
             target="_blank"
             rel="noreferrer"
             className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full bg-blue-700 px-5 font-black text-white shadow-lg shadow-blue-700/25"
@@ -154,11 +170,11 @@ export default function AttractionDetailPage() {
           </a>
           <a
             href={createGoogleMapsDirectionsUrl(
-  attraction.latitude,
-  attraction.longitude,
-  latitude,
-  longitude
-)}
+              attraction.latitude,
+              attraction.longitude,
+              latitude,
+              longitude,
+            )}
             target="_blank"
             rel="noreferrer"
             aria-label="Open map"

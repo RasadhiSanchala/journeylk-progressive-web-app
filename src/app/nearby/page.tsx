@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo } from "react";
 import { Crosshair, Loader2, LocateFixed, MapPin, Navigation, Route, Star } from "lucide-react";
@@ -94,11 +95,15 @@ export default function NearbyPage() {
           </div>
 
           <div className="mt-4 flex gap-4">
-            <img
-              src={nearestAttraction.image}
-              alt={nearestAttraction.name}
-              className="h-24 w-24 shrink-0 rounded-3xl object-cover"
-            />
+            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-3xl">
+              <Image
+                src={nearestAttraction.image}
+                alt={nearestAttraction.name}
+                fill
+                sizes="96px"
+                className="object-cover"
+              />
+            </div>
             <div className="min-w-0 flex-1">
               <p className="line-clamp-2 text-sm leading-6 text-slate-600">{nearestAttraction.shortDescription}</p>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -154,7 +159,15 @@ export default function NearbyPage() {
               <div className="grid h-9 w-9 shrink-0 place-items-center rounded-2xl bg-blue-50 text-sm font-black text-blue-800">
                 {index + 1}
               </div>
-              <img src={attraction.image} alt={attraction.name} className="h-16 w-16 shrink-0 rounded-2xl object-cover" />
+              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl">
+                <Image
+                  src={attraction.image}
+                  alt={attraction.name}
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              </div>
               <div className="min-w-0 flex-1">
                 <h3 className="truncate font-black text-slate-950">{attraction.name}</h3>
                 <p className="mt-1 flex items-center gap-1 truncate text-sm text-slate-600">

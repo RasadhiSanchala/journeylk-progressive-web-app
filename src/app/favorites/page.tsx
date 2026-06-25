@@ -1,7 +1,8 @@
 "use client";
 
-import { BookmarkCheck, Trash2 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import { BookmarkCheck, Trash2 } from "lucide-react";
 import EmptyState from "@/components/EmptyState";
 import FavoriteButton from "@/components/FavoriteButton";
 import TopBar from "@/components/TopBar";
@@ -19,7 +20,7 @@ export default function FavoritesPage() {
         <h1 className="text-3xl font-black text-slate-950">My Favorites</h1>
         <div className="mt-4 flex gap-3 rounded-2xl border border-blue-200 bg-blue-50 p-4 text-sm text-slate-600">
           <BookmarkCheck className="mt-0.5 shrink-0 text-blue-700" size={20} />
-          <p>Saved places are stored securely in your browser using LocalStorage and remain after refresh.</p>
+          <p>Saved places.</p>
         </div>
       </section>
 
@@ -44,7 +45,13 @@ export default function FavoritesPage() {
               className="overflow-hidden rounded-3xl bg-white shadow-md shadow-slate-900/8 ring-1 ring-slate-200"
             >
               <div className="relative h-60">
-                <img src={attraction.image} alt={attraction.name} className="h-full w-full object-cover" />
+                <Image
+                  src={attraction.image}
+                  alt={attraction.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 420px"
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent" />
                 <span className="absolute left-4 top-4 rounded-lg bg-amber-400 px-3 py-2 text-xs font-black text-slate-900">
                   {attraction.category}
