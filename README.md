@@ -13,7 +13,6 @@ The application helps tourists discover Sri Lankan attractions, filter places by
 - Fetch API
 - LocalStorage
 - HTML5 Geolocation API
-- Open-Meteo Weather API
 - PWA Web Manifest
 
 ## Main Features
