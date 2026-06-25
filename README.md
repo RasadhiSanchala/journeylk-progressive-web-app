@@ -29,15 +29,16 @@ The application helps tourists discover Sri Lankan attractions, filter places by
 
 ## Technical Overview
 
-| Feature Area | How JourneyLK Implements It |
+| Feature Area | Implementation in JourneyLK |
 | --- | --- |
-| Mobile-first responsive design | max-width mobile shell, bottom nav, responsive cards, 48px touch targets |
-| DOM/state management | React state for filters, search, forms, favorites, and geolocation |
-| Asynchronous integration | Fetch API calls `/api/attractions` |
-| Browser storage | LocalStorage for favorites and profile preferences |
-| Web-based hardware API | Geolocation API for real-time distance calculation |
-| SPA routing | Next.js App Router pages and dynamic attraction routes |
-| Code quality | TypeScript interfaces, reusable components, hooks, utilities, and error handling |
+| Mobile-first user experience | Uses a mobile-width app layout, bottom navigation, responsive attraction cards, readable spacing, and touch-friendly buttons for small screens. |
+| Interactive UI behavior | Uses React state for category filters, search input, forms, favorites, and location-based UI updates. |
+| Dynamic data handling | Fetches attraction data asynchronously using the Fetch API through the `/api/attractions` route. |
+| User data persistence | Saves favorites and profile preferences in LocalStorage so selected data remains after refresh or browser restart. |
+| Location-based experience | Uses the HTML5 Geolocation API to get the user's current location and calculate nearby attraction distance. |
+| Map navigation support | Generates Google Maps direction links using attraction coordinates and the user's current location when available. |
+| App routing | Uses Next.js App Router for pages such as Discover, Favorites, Nearby, Profile, and dynamic attraction detail pages. |
+| Code organization | Uses TypeScript interfaces, reusable components, custom hooks, utility functions, and error handling for maintainable code. |
 
 ## Folder Structure
 
