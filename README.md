@@ -33,7 +33,7 @@ The application helps tourists discover Sri Lankan attractions, filter places by
 | --- | --- |
 | Mobile-first responsive design | max-width mobile shell, bottom nav, responsive cards, 48px touch targets |
 | DOM/state management | React state for filters, search, forms, favorites, weather, and geolocation |
-| Asynchronous integration | Fetch API calls `/api/attractions` and Open-Meteo weather service |
+| Asynchronous integration | Fetch API calls `/api/attractions` |
 | Browser storage | LocalStorage for favorites and profile preferences |
 | Web-based hardware API | Geolocation API for real-time distance calculation |
 | SPA routing | Next.js App Router pages and dynamic attraction routes |
