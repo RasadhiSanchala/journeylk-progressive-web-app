@@ -52,7 +52,7 @@ export default function FavoritesPage() {
                   sizes="(max-width: 768px) 100vw, 420px"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/70 to-transparent" />
                 <span className="absolute left-4 top-4 rounded-lg bg-amber-400 px-3 py-2 text-xs font-black text-slate-900">
                   {attraction.category}
                 </span>

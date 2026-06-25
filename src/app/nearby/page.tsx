@@ -52,7 +52,7 @@ export default function NearbyPage() {
         </p>
       </section>
 
-      <section className="mx-5 rounded-[2rem] bg-gradient-to-br from-blue-700 via-blue-600 to-sky-500 p-5 text-white shadow-xl shadow-blue-900/20">
+      <section className="mx-5 rounded-4xl bg-linear-to-br from-blue-700 via-blue-600 to-sky-500 p-5 text-white shadow-xl shadow-blue-900/20">
         <div className="flex items-center gap-4">
           <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/15 ring-1 ring-white/25">
             {loading ? <Loader2 className="animate-spin" size={27} /> : <LocateFixed size={27} />}
@@ -83,7 +83,7 @@ export default function NearbyPage() {
       </section>
 
       {nearestAttraction && (
-        <section className="mx-5 mt-5 rounded-[2rem] bg-white p-4 shadow-md shadow-slate-900/8 ring-1 ring-slate-200">
+        <section className="mx-5 mt-5 rounded-4xl bg-white p-4 shadow-md shadow-slate-900/8 ring-1 ring-slate-200">
           <div className="flex items-center justify-between gap-3">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-emerald-700">Nearest attraction</p>

@@ -58,7 +58,7 @@ export default function DiscoverPage() {
     <div>
       <TopBar />
       <section className="px-5 pt-5">
-        <div className="rounded-[2rem] bg-gradient-to-br from-blue-800 via-blue-700 to-sky-500 p-5 text-white shadow-xl shadow-blue-900/20">
+        <div className="rounded-4xl bg-lienear-to-br from-blue-800 via-blue-700 to-sky-500 p-5 text-white shadow-xl shadow-blue-900/20">
           <p className="text-sm font-semibold text-blue-100">Mobile travel companion</p>
           <h1 className="mt-2 text-3xl font-black leading-tight">Explore Sri Lanka with JourneyLK</h1>
           <p className="mt-3 text-sm leading-6 text-blue-50">

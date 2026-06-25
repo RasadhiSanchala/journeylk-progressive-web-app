@@ -26,7 +26,7 @@ export default function AttractionCard({ attraction, priority = false }: Attract
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/15 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/15 to-transparent" />
 
       <div className="absolute right-4 top-4">
         <FavoriteButton id={attraction.id} />

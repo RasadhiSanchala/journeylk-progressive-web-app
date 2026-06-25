@@ -43,7 +43,7 @@ export default function AttractionDetailPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/30" />
+        <div className="absolute inset-0 bg-linear-to-t from-slate-950/50 via-transparent to-slate-950/30" />
         <div className="absolute left-4 right-4 top-4 flex items-center justify-between">
           <Link
             href="/"
@@ -56,7 +56,7 @@ export default function AttractionDetailPage() {
         </div>
       </section>
 
-      <section className="relative -mt-10 rounded-t-[2rem] bg-slate-50 px-5 pb-8 pt-7">
+      <section className="relative -mt-10 rounded-t-4xl bg-slate-50 px-5 pb-8 pt-7">
         <div className="flex items-start justify-between gap-3">
           <div>
             <h1 className="text-3xl font-black leading-tight text-slate-950">{attraction.name}</h1>
