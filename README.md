@@ -1,6 +1,6 @@
 # JourneyLK — Progressive Web App
 
-JourneyLK is a mobile-first Local Tour & Travel Web Guide built for SENG 41293 — Mobile Web Application Development, Track B.
+JourneyLK is a mobile-first Local Tour & Travel Web Guide.
 
 The application helps tourists discover Sri Lankan attractions, filter places by category, view rich destination details, save favorites, calculate real-time distance using the browser Geolocation API, and open destinations in Google Maps.
 
@@ -28,9 +28,9 @@ The application helps tourists discover Sri Lankan attractions, filter places by
 - PWA manifest for installability
 - Bottom navigation with touch-friendly targets
 
-## Assignment Requirement Mapping
+## Technical Overview
 
-| Requirement | How JourneyLK Covers It |
+| Feature Area | How JourneyLK Implements It |
 | --- | --- |
 | Mobile-first responsive design | max-width mobile shell, bottom nav, responsive cards, 48px touch targets |
 | DOM/state management | React state for filters, search, forms, favorites, weather, and geolocation |
@@ -94,6 +94,5 @@ npm run type-check # run TypeScript checks
 - Recommended: Google Chrome latest
 - Firefox and Safari are also supported for normal browsing
 - Geolocation requires HTTPS or localhost
-- For viva testing, use Chrome DevTools responsive device toolbar
 
 
