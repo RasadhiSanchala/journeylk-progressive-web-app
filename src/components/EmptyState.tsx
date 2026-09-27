@@ -10,7 +10,7 @@ interface EmptyStateProps {
 
 export default function EmptyState({ title, message, actionLabel, actionHref }: EmptyStateProps) {
   return (
-    <section className="mx-5 rounded-3xl border-2 border-dashed border-blue-200 bg-blue-50 p-8 text-center">
+    <section className="mx-5 rounded-3xl border-2 border-dashed border-blue-200 bg-blue-50 p-8 text-center lg:mx-0 lg:p-12">
       <div className="mx-auto grid h-24 w-24 place-items-center rounded-full bg-white text-blue-800 shadow-sm">
         <Compass size={36} />
       </div>

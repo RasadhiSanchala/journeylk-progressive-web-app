@@ -10,7 +10,7 @@ interface CategoryFilterProps {
 
 export default function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {
   return (
-    <div className="no-scrollbar flex gap-2 overflow-x-auto px-5 py-3" aria-label="Attraction categories">
+    <div className="no-scrollbar flex gap-2 overflow-x-auto px-5 py-3 lg:flex-wrap lg:overflow-visible lg:px-0 lg:py-4" aria-label="Attraction categories">
       {categories.map((category) => {
         const active = category === selectedCategory;
 

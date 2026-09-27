@@ -59,7 +59,7 @@ export default function InstallAppButton() {
   }
 
   return (
-    <section className="mx-5 mt-5 rounded-3xl bg-slate-950 p-5 text-white shadow-xl shadow-slate-900/20">
+    <section className="mx-5 mt-5 rounded-3xl bg-slate-950 p-5 text-white shadow-xl shadow-slate-900/20 lg:mx-0 lg:mt-0 lg:p-7">
       <div className="flex items-start gap-4">
         <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/10 ring-1 ring-white/15">
           {isInstalled ? <CheckCircle2 size={27} className="text-emerald-300" /> : <Smartphone size={27} />}

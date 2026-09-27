@@ -15,13 +15,13 @@ export default function AttractionCard({ attraction, priority = false }: Attract
       href={`/attractions/${attraction.id}`}
       className="group relative block overflow-hidden rounded-3xl bg-slate-900 shadow-lg shadow-slate-900/10"
     >
-      <div className="relative h-56 w-full overflow-hidden">
+      <div className="relative h-56 w-full overflow-hidden lg:h-72">
         <Image
           src={attraction.image}
           alt={attraction.name}
           fill
           priority={priority}
-          sizes="(max-width: 768px) 100vw, 430px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 520px"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
       </div>

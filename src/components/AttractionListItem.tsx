@@ -11,14 +11,14 @@ export default function AttractionListItem({ attraction }: AttractionListItemPro
   return (
     <Link
       href={`/attractions/${attraction.id}`}
-      className="flex min-h-24 items-center gap-4 rounded-2xl bg-white p-3 shadow-sm shadow-slate-900/5 ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:shadow-md"
+      className="flex min-h-24 items-center gap-4 rounded-2xl bg-white p-3 shadow-sm shadow-slate-900/5 ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:shadow-md lg:min-h-28 lg:p-4"
     >
-      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl">
+      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl lg:h-24 lg:w-24">
         <Image
           src={attraction.image}
           alt={attraction.name}
           fill
-          sizes="80px"
+          sizes="(max-width: 1023px) 80px, 96px"
           className="object-cover"
         />
       </div>

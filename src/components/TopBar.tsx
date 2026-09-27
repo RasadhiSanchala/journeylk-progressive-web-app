@@ -6,7 +6,7 @@ interface TopBarProps {
 
 export default function TopBar({ title = "JourneyLK" }: TopBarProps) {
   return (
-    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur-md">
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur-md lg:hidden">
       <div className="mx-auto flex h-14 max-w-md items-center justify-center px-5">
         <Link
           href="/"
